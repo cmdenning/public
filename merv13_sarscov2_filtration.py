@@ -38,6 +38,6 @@ efficiencies = [
 #normalized copies
 copies_norm = [c/sum(copies) for c in copies]
 
-#weighted average filtration efficiency for SARS-CoV-2 virions
+#weighted average filtration efficiency for SARS-CoV-2-containing particles
 efficiency = sum([cn*e for cn, e in zip(copies_norm, efficiencies)])
 print("efficiency:", efficiency)
